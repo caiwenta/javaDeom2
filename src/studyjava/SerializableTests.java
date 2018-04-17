@@ -33,7 +33,6 @@ public class SerializableTests {
 
     }
 
-    @SuppressWarnings("unchecked")
     @Test
     public void SerializeObjectTest() throws IOException, ClassNotFoundException {
 
