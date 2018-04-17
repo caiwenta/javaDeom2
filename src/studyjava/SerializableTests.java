@@ -11,10 +11,10 @@ import java.util.Arrays;
 import java.util.List;
 
 public class SerializableTests {
-    private List<Persion> Persions = new ArrayList<>();
+    public List<Persion> Persions = new ArrayList<>();
     @BeforeEach
     void setUp() throws Exception {
-        Persions.add(new Persion("k5", 17,Gender.FEMALE));
+        Persions.add(new Persion("k9", 17,Gender.FEMALE));
         Persions.add(new Persion("k6", 19,Gender.MALE));
         Persions.add(new Persion("k7", 20,Gender.MALE));
         Persions.add(new Persion("k8", 21,Gender.FEMALE));
@@ -33,6 +33,7 @@ public class SerializableTests {
 
     }
 
+    @SuppressWarnings("unchecked")
     @Test
     public void SerializeObjectTest() throws IOException, ClassNotFoundException {
 
