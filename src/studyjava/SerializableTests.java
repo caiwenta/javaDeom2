@@ -11,8 +11,13 @@ import java.util.Arrays;
 import java.util.List;
 
 public class SerializableTests {
+    private List<Persion> Persions = new ArrayList<>();
     @BeforeEach
     void setUp() throws Exception {
+        Persions.add(new Persion("k5", 17,Gender.FEMALE));
+        Persions.add(new Persion("k6", 19,Gender.MALE));
+        Persions.add(new Persion("k7", 20,Gender.MALE));
+        Persions.add(new Persion("k8", 21,Gender.FEMALE));
     }
 
     @AfterEach
@@ -20,8 +25,11 @@ public class SerializableTests {
     }
 
     @Test
-    public void DeserializeObjectTest() {
+    public void DeserializeObjectTest() throws IOException, ClassNotFoundException  {
         //反序列化
+        ObjectOutputStream oos = new ObjectOutputStream(new FileOutputStream("jason.se"));
+        oos.writeObject(Persions);
+        oos.close();
 
     }
 
@@ -29,15 +37,6 @@ public class SerializableTests {
     public void SerializeObjectTest() throws IOException, ClassNotFoundException {
 
         //序列化
-        List<Persion> Persions = new ArrayList<>();
-        Persions.add(new Persion("k5", 17,Gender.FEMALE));
-        Persions.add(new Persion("k6", 19,Gender.MALE));
-        Persions.add(new Persion("k7", 20,Gender.MALE));
-        Persions.add(new Persion("k8", 21,Gender.FEMALE));
-
-        ObjectOutputStream oos = new ObjectOutputStream(new FileOutputStream("jason.se"));
-        oos.writeObject(Persions);
-        oos.close();
 
         ObjectInputStream ois = new ObjectInputStream(new FileInputStream("jason.se"));
         List<Persion> tempPersions = (List<Persion>) ois.readObject();
