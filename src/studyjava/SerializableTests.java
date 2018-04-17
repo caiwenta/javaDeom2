@@ -30,10 +30,10 @@ public class SerializableTests {
 
         //序列化
         List<Persion> Persions = new ArrayList<>();
-        Persions.add(new Persion("k1", 17,Gender.FEMALE));
-        Persions.add(new Persion("k2", 19,Gender.MALE));
-        Persions.add(new Persion("k3", 20,Gender.MALE));
-        Persions.add(new Persion("k4", 21,Gender.FEMALE));
+        Persions.add(new Persion("k5", 17,Gender.FEMALE));
+        Persions.add(new Persion("k6", 19,Gender.MALE));
+        Persions.add(new Persion("k7", 20,Gender.MALE));
+        Persions.add(new Persion("k8", 21,Gender.FEMALE));
 
         ObjectOutputStream oos = new ObjectOutputStream(new FileOutputStream("jason.se"));
         oos.writeObject(Persions);
