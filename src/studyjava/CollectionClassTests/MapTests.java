@@ -54,6 +54,7 @@ public class MapTests {
         Collection collection=map1.values();
         Iterator iterator2 = collection.iterator();
 
+
         Map<String, String> map3 = new LinkedHashMap<String, String>();
         map3.put("justin", "justin的讯息");
         map3.put("momor", "momor的讯息");
