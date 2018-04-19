@@ -1,3 +1,8 @@
+/*
+学习来源
+https://www.cnblogs.com/leeplogs/p/5891861.html
+* */
+
 package studyjava.CollectionClassTests;
 
 import com.sun.org.apache.xml.internal.security.Init;
@@ -51,7 +56,7 @@ public class MapTests {
         map1.put("aa", "11");
 
         //遍历
-        Collection collection=map1.values();
+        Collection collection = map1.values();
         Iterator iterator2 = collection.iterator();
 
 
@@ -59,7 +64,7 @@ public class MapTests {
         map3.put("justin", "justin的讯息");
         map3.put("momor", "momor的讯息");
         map3.put("caterpillar", "caterpillar的讯息");
-        for(String value : map3.values()) {
+        for (String value : map3.values()) {
             System.out.println(value);
         }
     }
