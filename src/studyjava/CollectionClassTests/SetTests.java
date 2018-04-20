@@ -17,8 +17,8 @@ import java.util.TreeSet;
 Set（无序、不能重复）
 Set里存放的对象是无序，不能重复的，集合中的对象不按特定的方式排序，只是简单地把对象加入集合中。
 实现类：
-HashSet：
-TreeSet：
+HashSet：是哈希表实现的,HashSet中的数据是无序的，可以放入null，但只能放入一个null，两者中的值都不能重复，就如数据库中唯一约束。
+TreeSet：是二差树实现的,Treeset中的数据是自动排好序的，不允许放入null值。
 * */
 public class SetTests {
     @BeforeEach
