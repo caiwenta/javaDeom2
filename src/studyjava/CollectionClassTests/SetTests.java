@@ -1,3 +1,7 @@
+/*
+学习来源
+https://www.cnblogs.com/leeplogs/p/5891861.html
+* */
 package studyjava.CollectionClassTests;
 
 import org.junit.jupiter.api.AfterEach;
@@ -12,6 +16,9 @@ import java.util.TreeSet;
 /*
 Set（无序、不能重复）
 Set里存放的对象是无序，不能重复的，集合中的对象不按特定的方式排序，只是简单地把对象加入集合中。
+实现类：
+HashSet：
+TreeSet：
 * */
 public class SetTests {
     @BeforeEach
