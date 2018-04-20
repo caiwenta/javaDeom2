@@ -1,3 +1,7 @@
+/*
+学习来源
+https://www.cnblogs.com/leeplogs/p/5891861.html
+* */
 package studyjava.CollectionClassTests;
 
 import org.junit.jupiter.api.AfterEach;
@@ -12,8 +16,12 @@ import static org.junit.jupiter.api.Assertions.*;
 
 
 /*
+List（有序、可重复）
+List里存放的对象是有序的，同时也是可以重复的，List关注的是索引，拥有一系列和索引相关的方法，查询速度快。因为往list集合里插入或删除数据时，会伴随着后面数据的移动，所有插入删除数据速度慢。
+实现类：
 ArrayList和LinkedList在用法上没有区别，但是在功能上还是有区别的。
-LinkedList经常用在增删操作较多而查询操作很少的情况下，ArrayList则相反。
+LinkedList:经常用在增删操作较多而查询操作很少的情况下，
+ArrayList:则相反。
 */
 public class ListTests {
     @BeforeEach
