@@ -1,4 +1,4 @@
-package studyjava;
+package studyjava.StringTests;
 
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
