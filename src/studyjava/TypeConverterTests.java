@@ -24,7 +24,7 @@ public class TypeConverterTests {
     @Test
     public void TypeConverterTest() throws ParseException {
 
-        //时间转换
+        //时间转换 yyyy-MM-dd HH:mm:ss
         //String -> Date
         SimpleDateFormat formatter = new SimpleDateFormat("yyyy-MM-dd");
         String s = "2018-04-21";
