@@ -38,6 +38,7 @@ public class StringTests {
         assertEquals(str1, str3);
         assertEquals(str2, str4);
 
+
         //通过new关键字来生成对象是在堆区进行的，而在堆区进行对象生成的过程是不会去检测该对象是否已经存在的。因此通过new来创建对象，创建出的一定是不同的对象，即使字符串的内容是相同的。
         System.out.println(str1 == str2);
         System.out.println(str1 == str3);
@@ -65,6 +66,7 @@ public class StringTests {
         MyStringBuffer.append(1);
         assertEquals(MyStringBuffer.length(), 4);
 
+
         StringBuffer sb = new StringBuffer();
         long begin = System.currentTimeMillis();
         for (int i = 0; i < time; i++) {
@@ -76,6 +78,7 @@ public class StringTests {
 
     @Test
     public void StringBuilderTest() {
+
 
         StringBuilder sb = new StringBuilder();
         long begin = System.currentTimeMillis();
