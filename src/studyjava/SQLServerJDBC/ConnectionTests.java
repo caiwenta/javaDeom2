@@ -1,6 +1,7 @@
 /*
  * E:\蔡文塔\sqljdbc\sqljdbc_6.4\chs\samples
- * Microsoft JDBC driver 6.4 for SQL Server 下载：https://www.microsoft.com/zh-cn/download/details.aspx?id=56615
+ * Microsoft JDBC driver 6.4 for SQL Server 下载和官方实例：https://www.microsoft.com/zh-cn/download/details.aspx?id=56615
+ *
  * */
 package studyjava.SQLServerJDBC;
 
