@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/javaDeom2.iml" filepath="$PROJECT_DIR$/javaDeom2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/JavaDeom.iml" filepath="$PROJECT_DIR$/JavaDeom.iml" />
     </modules>
   </component>
 </project>
