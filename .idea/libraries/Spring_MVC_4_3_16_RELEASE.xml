@@ -6,6 +6,7 @@
       <root url="jar://$PROJECT_DIR$/SprintMvcDeom/lib/spring-websocket-4.3.16.RELEASE.jar!/" />
       <root url="jar://$PROJECT_DIR$/SprintMvcDeom/lib/spring-web-4.3.16.RELEASE.jar!/" />
       <root url="jar://$PROJECT_DIR$/SprintMvcDeom/lib/spring-webmvc-4.3.16.RELEASE.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../sqljdbc/sqljdbc_6.4/chs/mssql-jdbc-6.4.0.jre8.jar!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES />
