@@ -1,0 +1,722 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataSource name="Sales@DESKTOP-58C1MQK">
+  <database-model serializer="dbm" rdbms="MSSQL" format-version="4.8">
+    <root id="1">
+      <ServerVersion>11.0.300</ServerVersion>
+      <ServerType>standalone</ServerType>
+    </root>
+    <database id="2" parent="1" name="Sales">
+      <ObjectId>6</ObjectId>
+      <Current>1</Current>
+      <Visible>1</Visible>
+    </database>
+    <database id="3" parent="1" name="master">
+      <ObjectId>1</ObjectId>
+    </database>
+    <database id="4" parent="1" name="tempdb">
+      <ObjectId>2</ObjectId>
+    </database>
+    <database id="5" parent="1" name="model">
+      <ObjectId>3</ObjectId>
+    </database>
+    <database id="6" parent="1" name="msdb">
+      <ObjectId>4</ObjectId>
+    </database>
+    <database id="7" parent="1" name="wdd_erp_snsn">
+      <ObjectId>5</ObjectId>
+    </database>
+    <database id="8" parent="1" name="wdd_erp2018526">
+      <ObjectId>7</ObjectId>
+    </database>
+    <schema id="9" parent="2" name="dbo">
+      <ObjectId>1</ObjectId>
+      <IntrospectionTimestamp>2018-06-25.17:26:54.553</IntrospectionTimestamp>
+      <Current>1</Current>
+      <Visible>1</Visible>
+    </schema>
+    <schema id="10" parent="2" name="guest">
+      <ObjectId>2</ObjectId>
+    </schema>
+    <schema id="11" parent="2" name="INFORMATION_SCHEMA">
+      <ObjectId>3</ObjectId>
+    </schema>
+    <schema id="12" parent="2" name="sys">
+      <ObjectId>4</ObjectId>
+    </schema>
+    <schema id="13" parent="2" name="db_owner">
+      <ObjectId>16384</ObjectId>
+    </schema>
+    <schema id="14" parent="2" name="db_accessadmin">
+      <ObjectId>16385</ObjectId>
+    </schema>
+    <schema id="15" parent="2" name="db_securityadmin">
+      <ObjectId>16386</ObjectId>
+    </schema>
+    <schema id="16" parent="2" name="db_ddladmin">
+      <ObjectId>16387</ObjectId>
+    </schema>
+    <schema id="17" parent="2" name="db_backupoperator">
+      <ObjectId>16389</ObjectId>
+    </schema>
+    <schema id="18" parent="2" name="db_datareader">
+      <ObjectId>16390</ObjectId>
+    </schema>
+    <schema id="19" parent="2" name="db_datawriter">
+      <ObjectId>16391</ObjectId>
+    </schema>
+    <schema id="20" parent="2" name="db_denydatareader">
+      <ObjectId>16392</ObjectId>
+    </schema>
+    <schema id="21" parent="2" name="db_denydatawriter">
+      <ObjectId>16393</ObjectId>
+    </schema>
+    <table id="22" parent="9" name="Orders">
+      <ObjectId>245575913</ObjectId>
+      <CreatedTimestamp>2018-02-08.23:31:49.150</CreatedTimestamp>
+      <ModifiedTimestamp>2018-02-09.00:01:14.797</ModifiedTimestamp>
+    </table>
+    <table id="23" parent="9" name="OrdersHistory">
+      <ObjectId>309576141</ObjectId>
+      <CreatedTimestamp>2018-02-08.23:52:02.087</CreatedTimestamp>
+      <ModifiedTimestamp>2018-02-09.00:01:14.797</ModifiedTimestamp>
+    </table>
+    <table id="24" parent="9" name="ProductionOrder">
+      <ObjectId>581577110</ObjectId>
+      <CreatedTimestamp>2018-03-18.00:18:32.703</CreatedTimestamp>
+      <ModifiedTimestamp>2018-03-18.00:18:32.703</ModifiedTimestamp>
+    </table>
+    <table id="25" parent="9" name="Sale">
+      <ObjectId>885578193</ObjectId>
+      <CreatedTimestamp>2018-04-18.21:57:41.010</CreatedTimestamp>
+      <ModifiedTimestamp>2018-04-18.22:22:06.320</ModifiedTimestamp>
+    </table>
+    <table id="26" parent="9" name="SalesOrder">
+      <ObjectId>565577053</ObjectId>
+      <CreatedTimestamp>2018-03-18.00:17:56.923</CreatedTimestamp>
+      <ModifiedTimestamp>2018-03-18.00:17:56.923</ModifiedTimestamp>
+    </table>
+    <table id="27" parent="9" name="TestTb">
+      <ObjectId>1205579333</ObjectId>
+      <CreatedTimestamp>2018-05-22.18:51:41.330</CreatedTimestamp>
+      <ModifiedTimestamp>2018-05-22.18:56:43.797</ModifiedTimestamp>
+    </table>
+    <table id="28" parent="9" name="pos_sale">
+      <ObjectId>341576255</ObjectId>
+      <Comment>销售(销售退货)登记</Comment>
+      <CreatedTimestamp>2018-02-09.00:39:13.920</CreatedTimestamp>
+      <ModifiedTimestamp>2018-03-29.19:29:41.187</ModifiedTimestamp>
+    </table>
+    <table id="29" parent="9" name="stock">
+      <ObjectId>597577167</ObjectId>
+      <CreatedTimestamp>2018-03-19.23:28:05.897</CreatedTimestamp>
+      <ModifiedTimestamp>2018-03-19.23:28:05.897</ModifiedTimestamp>
+    </table>
+    <table id="30" parent="9" name="t">
+      <ObjectId>629577281</ObjectId>
+      <CreatedTimestamp>2018-03-19.23:55:59.213</CreatedTimestamp>
+      <ModifiedTimestamp>2018-03-19.23:55:59.213</ModifiedTimestamp>
+    </table>
+    <routine id="31" parent="9" name="wsp">
+      <ObjectId>645577338</ObjectId>
+      <CreatedTimestamp>2018-03-19.23:56:22.700</CreatedTimestamp>
+      <ModifiedTimestamp>2018-03-19.23:56:22.700</ModifiedTimestamp>
+      <RoutineKind>procedure</RoutineKind>
+      <RoutineType>proc</RoutineType>
+    </routine>
+    <column id="32" parent="22" name="OrderID">
+      <Position>1</Position>
+      <SequenceIdentity>10000</SequenceIdentity>
+      <DataType>int|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="33" parent="22" name="OrderDate">
+      <Position>2</Position>
+      <DataType>datetime|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="34" parent="22" name="CustomerID">
+      <Position>3</Position>
+      <DataType>int|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <index id="35" parent="22" name="PK_Orders">
+      <Position>1</Position>
+      <ColNames>OrderID
+OrderDate</ColNames>
+      <Clustering>1</Clustering>
+      <Unique>1</Unique>
+    </index>
+    <key id="36" parent="22" name="PK_Orders">
+      <ObjectId>261575970</ObjectId>
+      <CreatedTimestamp>2018-02-08.23:31:49.153</CreatedTimestamp>
+      <ModifiedTimestamp>2018-02-08.23:31:49.153</ModifiedTimestamp>
+      <ColNames>OrderID
+OrderDate</ColNames>
+      <UnderlyingIndexName>PK_Orders</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <column id="37" parent="23" name="OrderID">
+      <Position>1</Position>
+      <SequenceIdentity>10000</SequenceIdentity>
+      <DataType>int|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="38" parent="23" name="OrderDate">
+      <Position>2</Position>
+      <DataType>datetime|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="39" parent="23" name="CustomerID">
+      <Position>3</Position>
+      <DataType>int|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <index id="40" parent="23" name="PK_OrdersHistory">
+      <Position>1</Position>
+      <ColNames>OrderID
+OrderDate</ColNames>
+      <Clustering>1</Clustering>
+      <Unique>1</Unique>
+    </index>
+    <key id="41" parent="23" name="PK_OrdersHistory">
+      <ObjectId>325576198</ObjectId>
+      <CreatedTimestamp>2018-02-08.23:52:02.140</CreatedTimestamp>
+      <ModifiedTimestamp>2018-02-08.23:52:02.140</ModifiedTimestamp>
+      <ColNames>OrderID
+OrderDate</ColNames>
+      <UnderlyingIndexName>PK_OrdersHistory</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <column id="42" parent="24" name="OrderId">
+      <Position>1</Position>
+      <DataType>varchar(10 char)|0s</DataType>
+    </column>
+    <column id="43" parent="24" name="OrderDate">
+      <Position>2</Position>
+      <DataType>datetime|0s</DataType>
+    </column>
+    <column id="44" parent="24" name="ProductId">
+      <Position>3</Position>
+      <DataType>varchar(10 char)|0s</DataType>
+    </column>
+    <column id="45" parent="24" name="OrderQty">
+      <Position>4</Position>
+      <DataType>int|0s</DataType>
+    </column>
+    <column id="46" parent="25" name="Id">
+      <Position>1</Position>
+      <SequenceIdentity>1</SequenceIdentity>
+      <DataType>int|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="47" parent="25" name="Name">
+      <Position>2</Position>
+      <DataType>varchar(16 char)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="48" parent="25" name="SaleTime">
+      <Position>3</Position>
+      <DataType>datetime|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <index id="49" parent="25" name="CT_Sale">
+      <Position>1</Position>
+      <ColNames>SaleTime</ColNames>
+      <Clustering>1</Clustering>
+    </index>
+    <index id="50" parent="25" name="PK_Sale">
+      <Position>2</Position>
+      <ColNames>Id</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="51" parent="25" name="PK_Sale">
+      <ObjectId>917578307</ObjectId>
+      <CreatedTimestamp>2018-04-18.22:05:25.587</CreatedTimestamp>
+      <ModifiedTimestamp>2018-04-18.22:05:25.587</ModifiedTimestamp>
+      <ColNames>Id</ColNames>
+      <UnderlyingIndexName>PK_Sale</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <column id="52" parent="26" name="OrderId">
+      <Position>1</Position>
+      <DataType>varchar(10 char)|0s</DataType>
+    </column>
+    <column id="53" parent="26" name="OrderDate">
+      <Position>2</Position>
+      <DataType>datetime|0s</DataType>
+    </column>
+    <column id="54" parent="26" name="ProductId">
+      <Position>3</Position>
+      <DataType>varchar(10 char)|0s</DataType>
+    </column>
+    <column id="55" parent="26" name="OrderQty">
+      <Position>4</Position>
+      <DataType>int|0s</DataType>
+    </column>
+    <column id="56" parent="27" name="Number">
+      <Position>1</Position>
+      <DataType>char(20 char)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="57" parent="27" name="Dt">
+      <Position>2</Position>
+      <DataType>datetime|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="58" parent="27" name="Id">
+      <Position>3</Position>
+      <SequenceIdentity>1</SequenceIdentity>
+      <DataType>int|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <index id="59" parent="27" name="idx_nc_number">
+      <Position>2</Position>
+      <ColNames>Number
+Dt</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <column id="60" parent="28" name="sa_id">
+      <Position>1</Position>
+      <Comment>主键</Comment>
+      <DataType>int|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="61" parent="28" name="sa_sh_id">
+      <Position>2</Position>
+      <Comment>店铺主键</Comment>
+      <DataType>int|0s</DataType>
+    </column>
+    <column id="62" parent="28" name="sa_co_man">
+      <Position>3</Position>
+      <Comment>收银人员主键</Comment>
+      <DataType>int|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="63" parent="28" name="sa_date">
+      <Position>4</Position>
+      <Comment>销售日期</Comment>
+      <DataType>datetime|0s</DataType>
+    </column>
+    <column id="64" parent="28" name="sa_no">
+      <Position>5</Position>
+      <Comment>单据号</Comment>
+      <DataType>varchar(50 char)|0s</DataType>
+    </column>
+    <column id="65" parent="28" name="sa_vo">
+      <Position>6</Position>
+      <Comment>凭证号</Comment>
+      <DataType>varchar(50 char)|0s</DataType>
+    </column>
+    <column id="66" parent="28" name="sa_ac_id">
+      <Position>7</Position>
+      <Comment>活动主键</Comment>
+      <DataType>int|0s</DataType>
+    </column>
+    <column id="67" parent="28" name="sa_order_man">
+      <Position>8</Position>
+      <Comment>制单人主键</Comment>
+      <DataType>int|0s</DataType>
+    </column>
+    <column id="68" parent="28" name="sa_st_id">
+      <Position>9</Position>
+      <Comment>仓库主键</Comment>
+      <DataType>int|0s</DataType>
+    </column>
+    <column id="69" parent="28" name="sa_update_man">
+      <Position>10</Position>
+      <Comment>修改人主键</Comment>
+      <DataType>int|0s</DataType>
+    </column>
+    <column id="70" parent="28" name="sa_update_time">
+      <Position>11</Position>
+      <Comment>修改时间</Comment>
+      <DataType>datetime|0s</DataType>
+    </column>
+    <column id="71" parent="28" name="sa_add_man">
+      <Position>12</Position>
+      <Comment>添加人主键</Comment>
+      <DataType>int|0s</DataType>
+    </column>
+    <column id="72" parent="28" name="sa_add_time">
+      <Position>13</Position>
+      <Comment>添加时间</Comment>
+      <DataType>datetime|0s</DataType>
+    </column>
+    <column id="73" parent="28" name="sa_status">
+      <Position>14</Position>
+      <Comment>状态(0,删除:1,可用:2,挂单:3,已</Comment>
+      <DataType>int|0s</DataType>
+    </column>
+    <column id="74" parent="28" name="sa_type">
+      <Position>15</Position>
+      <Comment>单据类型(0,销售登记:1,销售退货</Comment>
+      <DataType>int|0s</DataType>
+    </column>
+    <column id="75" parent="28" name="sa_sa_type">
+      <Position>16</Position>
+      <Comment>销售类型(0,会员:1,零售)</Comment>
+      <DataType>int|0s</DataType>
+    </column>
+    <column id="76" parent="28" name="sa_me_id">
+      <Position>17</Position>
+      <Comment>会员主键</Comment>
+      <DataType>int|0s</DataType>
+    </column>
+    <column id="77" parent="28" name="sa_remark">
+      <Position>18</Position>
+      <Comment>备注</Comment>
+      <DataType>varchar(50 char)|0s</DataType>
+    </column>
+    <column id="78" parent="28" name="sa_in_id">
+      <Position>19</Position>
+      <Comment>积分消费规则主键</Comment>
+      <DataType>int|0s</DataType>
+    </column>
+    <column id="79" parent="28" name="sa_in_num">
+      <Position>20</Position>
+      <Comment>积分消费</Comment>
+      <DataType>int|0s</DataType>
+    </column>
+    <column id="80" parent="28" name="sa_get_in_num">
+      <Position>21</Position>
+      <Comment>获得积分</Comment>
+      <DataType>int|0s</DataType>
+    </column>
+    <column id="81" parent="28" name="sa_deduct_money">
+      <Position>22</Position>
+      <Comment>扣除金额</Comment>
+      <DataType>decimal(10,2)|0s</DataType>
+    </column>
+    <column id="82" parent="28" name="sa_sa_vo">
+      <Position>23</Position>
+      <Comment>消费代金劵</Comment>
+      <DataType>int|0s</DataType>
+    </column>
+    <column id="83" parent="28" name="sa_gift_vo">
+      <Position>24</Position>
+      <Comment>赠送代金券</Comment>
+      <DataType>int|0s</DataType>
+    </column>
+    <column id="84" parent="28" name="sa_in_money">
+      <Position>25</Position>
+      <Comment>积分抵扣额</Comment>
+      <DataType>decimal(10,2)|0s</DataType>
+    </column>
+    <column id="85" parent="28" name="sa_card_money">
+      <Position>26</Position>
+      <Comment>刷卡金额</Comment>
+      <DataType>decimal(10,2)|0s</DataType>
+    </column>
+    <column id="86" parent="28" name="sa_shop_money">
+      <Position>27</Position>
+      <Comment>商城金额</Comment>
+      <DataType>decimal(10,2)|0s</DataType>
+    </column>
+    <column id="87" parent="28" name="sa_money">
+      <Position>28</Position>
+      <Comment>应收金额</Comment>
+      <DataType>decimal(10,2)|0s</DataType>
+    </column>
+    <column id="88" parent="28" name="sa_real_money">
+      <Position>29</Position>
+      <Comment>实收金额</Comment>
+      <DataType>decimal(10,2)|0s</DataType>
+    </column>
+    <column id="89" parent="28" name="sa_charge_money">
+      <Position>30</Position>
+      <Comment>挂账金额</Comment>
+      <DataType>decimal(10,2)|0s</DataType>
+    </column>
+    <column id="90" parent="28" name="sa_surplus_money">
+      <Position>31</Position>
+      <Comment>找零</Comment>
+      <DataType>decimal(10,2)|0s</DataType>
+    </column>
+    <column id="91" parent="28" name="sa_select">
+      <Position>32</Position>
+      <Comment>收款方式</Comment>
+      <DataType>int|0s</DataType>
+    </column>
+    <column id="92" parent="28" name="sa_audit_man">
+      <Position>33</Position>
+      <Comment>审核人主键</Comment>
+      <DataType>int|0s</DataType>
+    </column>
+    <column id="93" parent="28" name="sa_audit_time">
+      <Position>34</Position>
+      <Comment>审核时间</Comment>
+      <DataType>datetime|0s</DataType>
+    </column>
+    <column id="94" parent="28" name="sa_sale_money">
+      <Position>35</Position>
+      <Comment>销售金额</Comment>
+      <DataType>decimal(10,2)|0s</DataType>
+    </column>
+    <column id="95" parent="28" name="sa_change_money">
+      <Position>36</Position>
+      <Comment>退货金额</Comment>
+      <DataType>decimal(10,2)|0s</DataType>
+    </column>
+    <column id="96" parent="28" name="sa_gift_money">
+      <Position>37</Position>
+      <Comment>赠送金额</Comment>
+      <DataType>decimal(10,2)|0s</DataType>
+    </column>
+    <column id="97" parent="28" name="sa_current_vo">
+      <Position>38</Position>
+      <Comment>现有积分</Comment>
+      <DataType>int|0s</DataType>
+    </column>
+    <column id="98" parent="28" name="sa_is_charge">
+      <Position>39</Position>
+      <DataType>int|0s</DataType>
+    </column>
+    <column id="99" parent="28" name="sa_is_calculated">
+      <Position>40</Position>
+      <DataType>int|0s</DataType>
+    </column>
+    <column id="100" parent="28" name="sa_paytype">
+      <Position>41</Position>
+      <DataType>varchar(50 char)|0s</DataType>
+    </column>
+    <column id="101" parent="28" name="sa_erp_id">
+      <Position>42</Position>
+      <DefaultConstraintName>DF_pos_sale_On_sa_erp_id</DefaultConstraintName>
+      <DefaultExpression>0</DefaultExpression>
+      <DataType>int|0s</DataType>
+    </column>
+    <column id="102" parent="28" name="pzone">
+      <Position>43</Position>
+      <DataType>varchar(10 char)|0s</DataType>
+    </column>
+    <column id="103" parent="28" name="pztwo">
+      <Position>44</Position>
+      <DataType>int|0s</DataType>
+    </column>
+    <column id="104" parent="28" name="pzthree">
+      <Position>45</Position>
+      <DataType>int|0s</DataType>
+    </column>
+    <column id="105" parent="28" name="sa_times">
+      <Position>46</Position>
+      <DataType>int|0s</DataType>
+    </column>
+    <column id="106" parent="28" name="sa_print_time">
+      <Position>47</Position>
+      <DataType>datetime|0s</DataType>
+    </column>
+    <column id="107" parent="28" name="sa_salman">
+      <Position>48</Position>
+      <DefaultConstraintName>DF__pos_sale__sa_sal__173876EA</DefaultConstraintName>
+      <DefaultExpression>&apos;&apos;</DefaultExpression>
+      <DataType>varchar(100 char)|0s</DataType>
+    </column>
+    <column id="108" parent="28" name="sa_receivedmomey">
+      <Position>49</Position>
+      <Comment>应收金额</Comment>
+      <DefaultConstraintName>DF__pos_sale__sa_rec__182C9B23</DefaultConstraintName>
+      <DefaultExpression>0</DefaultExpression>
+      <DataType>decimal(10,2)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="109" parent="28" name="sa_paidmomey">
+      <Position>50</Position>
+      <Comment>实收金额</Comment>
+      <DefaultConstraintName>DF__pos_sale__sa_pai__1920BF5C</DefaultConstraintName>
+      <DefaultExpression>0</DefaultExpression>
+      <DataType>decimal(10,2)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="110" parent="28" name="sa_cashmoney">
+      <Position>51</Position>
+      <Comment>现金支付</Comment>
+      <DefaultConstraintName>DF__pos_sale__sa_cas__1A14E395</DefaultConstraintName>
+      <DefaultExpression>0</DefaultExpression>
+      <DataType>decimal(10,2)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="111" parent="28" name="sa_bankmomey">
+      <Position>52</Position>
+      <Comment>银行卡支付</Comment>
+      <DefaultConstraintName>DF__pos_sale__sa_ban__1B0907CE</DefaultConstraintName>
+      <DefaultExpression>0</DefaultExpression>
+      <DataType>decimal(10,2)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="112" parent="28" name="sa_weixinmoney">
+      <Position>53</Position>
+      <Comment>微信支付</Comment>
+      <DefaultConstraintName>DF__pos_sale__sa_wei__1BFD2C07</DefaultConstraintName>
+      <DefaultExpression>0</DefaultExpression>
+      <DataType>decimal(10,2)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="113" parent="28" name="sa_alipaymoney">
+      <Position>54</Position>
+      <Comment>支付宝金额</Comment>
+      <DefaultConstraintName>DF__pos_sale__sa_ali__1CF15040</DefaultConstraintName>
+      <DefaultExpression>0</DefaultExpression>
+      <DataType>decimal(10,2)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="114" parent="28" name="sa_storedmoney">
+      <Position>55</Position>
+      <Comment>储值卡金额</Comment>
+      <DefaultConstraintName>DF__pos_sale__sa_sto__1DE57479</DefaultConstraintName>
+      <DefaultExpression>0</DefaultExpression>
+      <DataType>decimal(10,2)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="115" parent="28" name="sa_salmanname">
+      <Position>56</Position>
+      <DataType>varchar(1000 char)|0s</DataType>
+    </column>
+    <column id="116" parent="28" name="sa_ac_ids">
+      <Position>57</Position>
+      <Comment>活动id</Comment>
+      <DataType>varchar(100 char)|0s</DataType>
+    </column>
+    <column id="117" parent="28" name="sa_ac_names">
+      <Position>58</Position>
+      <Comment>活动名称</Comment>
+      <DataType>varchar(500 char)|0s</DataType>
+    </column>
+    <index id="118" parent="28" name="PK_ON_pos_sale">
+      <Position>3</Position>
+      <ColNames>sa_id</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="119" parent="28" name="PK_ON_pos_sale">
+      <ObjectId>661577395</ObjectId>
+      <CreatedTimestamp>2018-03-29.19:29:40.530</CreatedTimestamp>
+      <ModifiedTimestamp>2018-03-29.19:29:40.530</ModifiedTimestamp>
+      <ColNames>sa_id</ColNames>
+      <UnderlyingIndexName>PK_ON_pos_sale</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <default id="120" parent="28" name="DF_pos_sale_On_sa_erp_id">
+      <ObjectId>373576369</ObjectId>
+      <ColNames>sa_erp_id</ColNames>
+      <DefaultExpression>0</DefaultExpression>
+    </default>
+    <default id="121" parent="28" name="DF__pos_sale__sa_sal__173876EA">
+      <ObjectId>389576426</ObjectId>
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>sa_salman</ColNames>
+      <DefaultExpression>&apos;&apos;</DefaultExpression>
+    </default>
+    <default id="122" parent="28" name="DF__pos_sale__sa_rec__182C9B23">
+      <ObjectId>405576483</ObjectId>
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>sa_receivedmomey</ColNames>
+      <DefaultExpression>0</DefaultExpression>
+    </default>
+    <default id="123" parent="28" name="DF__pos_sale__sa_pai__1920BF5C">
+      <ObjectId>421576540</ObjectId>
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>sa_paidmomey</ColNames>
+      <DefaultExpression>0</DefaultExpression>
+    </default>
+    <default id="124" parent="28" name="DF__pos_sale__sa_cas__1A14E395">
+      <ObjectId>437576597</ObjectId>
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>sa_cashmoney</ColNames>
+      <DefaultExpression>0</DefaultExpression>
+    </default>
+    <default id="125" parent="28" name="DF__pos_sale__sa_ban__1B0907CE">
+      <ObjectId>453576654</ObjectId>
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>sa_bankmomey</ColNames>
+      <DefaultExpression>0</DefaultExpression>
+    </default>
+    <default id="126" parent="28" name="DF__pos_sale__sa_wei__1BFD2C07">
+      <ObjectId>469576711</ObjectId>
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>sa_weixinmoney</ColNames>
+      <DefaultExpression>0</DefaultExpression>
+    </default>
+    <default id="127" parent="28" name="DF__pos_sale__sa_ali__1CF15040">
+      <ObjectId>485576768</ObjectId>
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>sa_alipaymoney</ColNames>
+      <DefaultExpression>0</DefaultExpression>
+    </default>
+    <default id="128" parent="28" name="DF__pos_sale__sa_sto__1DE57479">
+      <ObjectId>501576825</ObjectId>
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>sa_storedmoney</ColNames>
+      <DefaultExpression>0</DefaultExpression>
+    </default>
+    <column id="129" parent="29" name="Id">
+      <Position>1</Position>
+      <DataType>int|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="130" parent="29" name="articleno">
+      <Position>2</Position>
+      <DataType>varchar(20 char)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="131" parent="29" name="rcvdate">
+      <Position>3</Position>
+      <DataType>datetime|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="132" parent="29" name="qty">
+      <Position>4</Position>
+      <DataType>int|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="133" parent="29" name="unitprice">
+      <Position>5</Position>
+      <DataType>money|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <index id="134" parent="29" name="PK__stock__3214EC072F6DAA01">
+      <Position>1</Position>
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>Id</ColNames>
+      <Clustering>1</Clustering>
+      <Unique>1</Unique>
+    </index>
+    <key id="135" parent="29" name="PK__stock__3214EC072F6DAA01">
+      <ObjectId>613577224</ObjectId>
+      <NameSurrogate>1</NameSurrogate>
+      <CreatedTimestamp>2018-03-19.23:28:05.900</CreatedTimestamp>
+      <ModifiedTimestamp>2018-03-19.23:28:05.900</ModifiedTimestamp>
+      <ColNames>Id</ColNames>
+      <UnderlyingIndexName>PK__stock__3214EC072F6DAA01</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <column id="136" parent="30" name="id">
+      <Position>1</Position>
+      <SequenceIdentity>1</SequenceIdentity>
+      <DataType>int|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="137" parent="30" name="name">
+      <Position>2</Position>
+      <DataType>varchar(50 char)|0s</DataType>
+    </column>
+    <column id="138" parent="30" name="j">
+      <Position>3</Position>
+      <DataType>int|0s</DataType>
+    </column>
+    <column id="139" parent="30" name="c">
+      <Position>4</Position>
+      <DataType>int|0s</DataType>
+    </column>
+    <column id="140" parent="30" name="jdate">
+      <Position>5</Position>
+      <DataType>datetime|0s</DataType>
+    </column>
+    <argument id="141" parent="31" name="@name">
+      <Position>1</Position>
+      <DataType>varchar(50 char)|0s</DataType>
+    </argument>
+    <argument id="142" parent="31" name="@cost">
+      <Position>2</Position>
+      <DataType>int|0s</DataType>
+    </argument>
+  </database-model>
+</dataSource>
