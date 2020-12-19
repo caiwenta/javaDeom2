@@ -40,6 +40,7 @@ public class ListTests {
         list1.add("A");
         list1.add("B");
         list1.add("C");
+        list1.add("D");
         assertEquals(list1.size(), 3);
         assertEquals(list1.get(1), "B");
         //插入
