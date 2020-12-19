@@ -5,9 +5,13 @@ import java.io.Serializable;
 public class Persion implements Serializable {
 
 
+
+
     public Persion(String name, int age, Gender gender) {
-        System.out.println("带参的构造函数");
+        System.out.println("带参的构造函数11");
         this.name = name;
+
+
         this.age = age;
         this.gender = gender;
     }

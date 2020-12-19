@@ -13,11 +13,9 @@
         <!-- <property name="hbm2ddl.auto">update</property> -->
 
         <property name="hibernate.connection.driver_class">com.microsoft.sqlserver.jdbc.SQLServerDriver</property>
-        <property name="hibernate.connection.url">jdbc:sqlserver://DESKTOP-58C1MQK\CWT;database=wdd_erp_snsn;integratedSecurity=true;</property>
+        <property name="hibernate.connection.url">jdbc:sqlserver://DESKTOP-58C1MQK\CWT;database=Sales;integratedSecurity=true;</property>
         <property name="hibernate.dialect">org.hibernate.dialect.SQLServerDialect</property>
-        <mapping class="table.ApiQueueEntity"/>
-        <mapping resource="table/ApiQueueEntity.hbm.xml"/>
-
-
+        <mapping class="table.SaleEntity"/>
+        <mapping resource="table/SaleEntity.hbm.xml"/>
     </session-factory>
 </hibernate-configuration>
